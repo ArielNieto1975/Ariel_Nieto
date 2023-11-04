@@ -1,0 +1,41 @@
+.container {
+  width: 80%;
+  margin: 80px auto 0;
+  text-align: left;
+}
+.home h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  background-image: linear-gradient(to right, #c1aefc, #7549fa, #c1aefc);
+  padding: 10px;
+}
+.home p {
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-shadow: 0 0 var(--col-de-link);
+}
+/*************************/
+.header {
+  width: 100vw;
+  margin: none;
+}
+.header__banner {
+  display: Flex;
+  width: 80%;
+  margin: 100px auto 50px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #ffffff;
+  text-align: left;
+}
+.header h1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.header img {
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ffffff;
+}

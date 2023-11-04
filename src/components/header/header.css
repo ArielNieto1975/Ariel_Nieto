@@ -1,0 +1,145 @@
+.header {
+  /* background-image: url("./assets/banner2.jpg"); */
+  background-image: url("../../../public/assets/banner2.jpg");
+  display: Flex;
+  flex-direction: column;
+}
+/* .header__banner {
+  display: Flex;
+  width: 80%;
+  margin: 100px auto 50px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #ffffff;
+  text-align: left;
+}
+.header h1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.header img {
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ffffff;
+} */
+.header__nav {
+  position: fixed;
+  background-color: var(--col-de-link);
+  width: 100vw;
+}
+.header__nav ul,
+.responsive__nav ul {
+  display: flex;
+  color: #ffffff;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.responsive__nav ul {
+  display: none;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 60px;
+  /* height: 100vh; */
+}
+.responsive__nav ul li {
+  border-bottom: 1px solid #ffffff;
+  padding: 15px 0;
+}
+.header__nav ul li {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.header__nav ul li:hover {
+  text-shadow: 0 0 25px rgb(0, 255, 34);
+}
+
+#menu,
+.bi-list {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #ffffff;
+}
+
+/* animacion */
+
+.a1 {
+  animation-name: home;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.a2 {
+  animation-name: home;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.a3 {
+  animation-name: home;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.a4 {
+  animation-name: home;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes home {
+  0% {
+  }
+
+  45% {
+    transform: scale(1);
+    color: #fff;
+  }
+  50% {
+    /* transform: scale(1.3); */
+    transform: scale(1.2);
+    color: rgb(255, 196, 0);
+    text-shadow: 0 0 5px black;
+  }
+  55% {
+    transform: scale(1);
+    color: #fff;
+  }
+
+  100% {
+  }
+}
+
+@media (max-width: 768px) {
+  .bi-list {
+    display: block;
+  }
+  .header__banner {
+    flex-direction: column;
+    text-align: justify;
+  }
+  .header__banner h1 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .header img {
+    margin-top: 50px;
+    width: 250px;
+  }
+  .header__nav ul {
+    display: none;
+  }
+  #menu:checked ~ ul {
+    display: block;
+  }
+}

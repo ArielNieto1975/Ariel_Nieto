@@ -1,0 +1,34 @@
+.proyecto__acc {
+  padding: 5px 0;
+}
+.proyecto__boton--repo {
+  width: 45%;
+  height: 30px;
+  cursor: pointer;
+  color: #297ccf;
+  border: 1px solid #297ccf;
+  outline: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.proyecto__boton--repo:hover {
+  color: buttonface;
+  background: #297ccf;
+}
+.proyecto__boton--demo {
+  width: 45%;
+  height: 30px;
+  cursor: pointer;
+  background: #297ccf;
+  border: 1px solid #91c9ff;
+  outline: none;
+  color: buttonface;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  float: right;
+}
+.proyecto__boton--demo:hover {
+  color: #297ccf;
+  background: buttonface;
+  border: 1px solid #297ccf;
+}
